@@ -1,0 +1,83 @@
+# ============================
+#  Python
+# ============================
+
+# Archivos compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Carpetas de build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Archivos de logs
+*.log
+
+# ============================
+#  Entornos virtuales
+# ============================
+
+venv/
+.venv/
+env/
+.env/
+
+# ============================
+#  VS Code
+# ============================
+
+.vscode/
+*.code-workspace
+
+# ============================
+#  Sistemas operativos
+# ============================
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# ============================
+#  Archivos temporales
+# ============================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ============================
+#  Proyectos Python típicos
+# ============================
+
+# pytest
+.cache/
+
+# coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+
+# mypy
+.mypy_cache/
+
+# pyright
+typings/
+
+# PyCharm
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
