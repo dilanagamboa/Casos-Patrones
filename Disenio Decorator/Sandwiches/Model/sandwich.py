@@ -9,13 +9,13 @@ class SandwichSize(Enum):
 class Sandwich(ABC):
     @abstractmethod
     def description(self):
-        pass
+        raise NotImplementedError
     @abstractmethod
     def size(self):
-        pass
+        raise NotImplementedError
     @abstractmethod
     def price(self):
-        pass
+        raise NotImplementedError
 
 @dataclass
 class BaseSandwich(Sandwich):
