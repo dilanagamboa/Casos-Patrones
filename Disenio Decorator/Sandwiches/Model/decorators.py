@@ -12,11 +12,11 @@ class SandwichDecoratorIngredients(Sandwich):
         self._name = self._ingredient.nombre()
 
     def description(self):
-        qty = f" x{self._cantidad}" if self._cantidad > 1 else ""
-        total_ing = self.unitary_price() * self._cantidad
+        qty = f" x {self._cantidad}" if self._cantidad > 1 else ""
+        total_ing = self.unitary_price()
         if self._typ == "Proteina":
-            return f"{self._sandwich.description()}{self._name}{qty} de {self.size().value} ({total_ing:.2f})"
-        return f"{self._sandwich.description()} + {self._name}{qty} ({total_ing:.2f})"
+            return f"{self._sandwich.description()}{self._name} de {self.size().value} cm ({total_ing:.2f}{qty})"
+        return f"{self._sandwich.description()} + {self._name} ({total_ing:.2f}{qty})"
     
     def size(self):
         return self._sandwich.size()
@@ -47,4 +47,3 @@ class SandwichDecoratorIngredients(Sandwich):
         })
 
         return summary
-
