@@ -1,5 +1,5 @@
 from enum import Enum
-from Sandwiches.Model.sandwich import SandwichSize
+from .sandwich import SandwichSize
 class Ingredients(Enum):
     #PROTEINAS
     PAVO = {

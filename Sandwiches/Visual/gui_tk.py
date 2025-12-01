@@ -1,9 +1,9 @@
 from posixpath import sep
 import tkinter as tk
 from tkinter import messagebox, ttk
-from Sandwiches.Model.sandwich import SandwichSize
-from Sandwiches.Controller.order_controller import OrderController
-from Sandwiches.Model.ingredients import Ingredients
+from ..Model.sandwich import SandwichSize
+from ..Controller.order_controller import OrderController
+from ..Model.ingredients import Ingredients
 
 class SandwichApp(tk.Tk):
     def __init__(self):

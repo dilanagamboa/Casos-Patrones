@@ -1,6 +1,6 @@
-from Sandwiches.Model.sandwich import *
-from Sandwiches.Model.decorators import SandwichDecoratorIngredients
-from Sandwiches.Model.ingredients import Ingredients
+from ..Model.sandwich import *
+from ..Model.decorators import SandwichDecoratorIngredients
+from ..Model.ingredients import Ingredients
 from typing import Dict
 class SandwichBuilder:
     def __init__(self, base : BaseSandwich):

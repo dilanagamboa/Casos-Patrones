@@ -1,5 +1,5 @@
-from Sandwiches.Model.sandwich import Sandwich
-from Sandwiches.Model.ingredients import Ingredients
+from .sandwich import Sandwich
+from .ingredients import Ingredients
 from typing import Any
 
 class SandwichDecoratorIngredients(Sandwich):
