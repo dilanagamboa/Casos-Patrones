@@ -1,5 +1,5 @@
-from .Visual.gui_tk import SandwichApp
-from .Model.sandwich import *
+from Sandwiches.Visual.gui_tk import SandwichApp
+from Sandwiches.Model.sandwich import *
 
 def main():
     gui = SandwichApp()
