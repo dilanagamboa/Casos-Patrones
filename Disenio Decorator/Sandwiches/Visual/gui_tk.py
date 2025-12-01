@@ -57,9 +57,6 @@ class SandwichApp(tk.Tk):
             var = tk.IntVar(value=0)
             chk = ttk.Checkbutton(row, text=p.nombre(), variable=var)
             chk.pack(side="left")
-            # placeholder para imagen
-            img_label = ttk.Label(row, text="[imagen]", relief="solid", width=12)
-            img_label.pack(side="left", padx=8)
             price_label = ttk.Label(row, text=f"{p.precio(SandwichSize.SMALL):.2f}/{p.precio(SandwichSize.BIG):.2f} (S/B)")
             price_label.pack(side="left", padx=6)
             self.protein_vars[p] = var
