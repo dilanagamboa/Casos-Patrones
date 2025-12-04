@@ -6,7 +6,7 @@ class Jugador:
         self.vida = 200
         self.artes_marciales = random.sample(artes_disponibles, 3)
         self.arte_seleccionada = None
-        self.estrategia_ataque = estrategia_ataque  # se aplica Pattern
+        self.estrategia_ataque = estrategia_ataque 
         self.combo_preparado = []
         self.artes_usadas_combo = [] 
     

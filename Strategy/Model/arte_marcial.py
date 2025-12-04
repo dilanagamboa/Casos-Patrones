@@ -10,8 +10,3 @@ class ArteMarcial(ABC):
     @abstractmethod
     def obtener_golpes(self):
         pass
-    
-    # cada arte marcial define cómo genera su combo, entonces acá se aplica Strategy
-    @abstractmethod
-    def ejecutar_combo(self, num_golpes):
-        pass

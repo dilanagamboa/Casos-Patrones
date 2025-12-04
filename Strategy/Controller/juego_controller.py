@@ -1,13 +1,12 @@
 from Model.artes_marciales import *
+from Model.arte_marcial_factory import ArteMarcialFactory
 from Model.estrategia_ataque import EstrategiaArteSeleccionada, EstrategiaArtesAleatorias
 from Model.jugador import Jugador
 
 class JuegoController:
     def __init__(self):
-        self.artes_disponibles = [
-            Aikido(), Boxeo(), Capoeira(), JiuJitsu(), Judo(),
-            Karate(), KungFu(), Sumo(), Taekwondo(), WingChun()
-        ]
+        self.artes_disponibles = ArteMarcialFactory.crear_todas_las_artes()
+        
         self.jugador1 = Jugador(
             "Player 1", 
             self.artes_disponibles, 
